@@ -70,11 +70,10 @@ Make sure you have these installed:
 
 ## 📸 Screenshots
 
-*(Add your real screenshots here!)*
 
 | Dashboard | Create Form | PDF Output |
 | :-------: | :---------: | :--------: |
-| ![Dashboard Screenshot](Images/main-page.png) | ![Creation Form Screenshot](https://via.placeholder.com/500x300?text=Making+an+Invoice) | ![PDF Output Screenshot](https://via.placeholder.com/500x300?text=Finished+Invoice) |
+| ![Dashboard Screenshot](Images/main-page.png) | ![Creation Form Screenshot](images/Invoice-form.png) | ![PDF Output Screenshot](Images/Invoice-output.png) |
 
 ---
 
