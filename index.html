@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvoiceGen Pro - Professional Invoice Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-file-invoice"></i>
+                    <span>InvoiceGen Pro</span>
+                </div>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="btn btn-primary" id="newInvoiceBtn">
+                        <i class="fas fa-plus"></i>
+                        New Invoice
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Dashboard View -->
+            <div class="dashboard" id="dashboard">
+                <div class="dashboard-header">
+                    <h1>Your Invoices</h1>
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="totalInvoices">0</span>
+                                <span class="stat-label">Total Invoices</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="totalAmount">$0</span>
+                                <span class="stat-label">Total Amount</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="invoices-grid" id="invoicesGrid">
+                    <div class="empty-state">
+                        <i class="fas fa-file-invoice"></i>
+                        <h3>No invoices yet</h3>
+                        <p>Create your first invoice to get started</p>
+                        <button class="btn btn-primary" onclick="showInvoiceForm()">
+                            <i class="fas fa-plus"></i>
+                            Create Invoice
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invoice Form -->
+            <div class="invoice-form-container" id="invoiceFormContainer" style="display: none;">
+                <div class="form-header">
+                    <h2 id="formTitle">Create New Invoice</h2>
+                    <button class="btn btn-secondary" onclick="showDashboard()">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Dashboard
+                    </button>
+                </div>
+
+                <form class="invoice-form" id="invoiceForm">
+                    <div class="form-grid">
+                        <!-- Company Information -->
+                        <div class="form-section">
+                            <h3>Your Company Information</h3>
+                            <div class="form-group">
+                                <label for="companyName">Company Name *</label>
+                                <input type="text" id="companyName" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="companyEmail">Email *</label>
+                                    <input type="email" id="companyEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="companyPhone">Phone</label>
+                                    <input type="tel" id="companyPhone">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="companyAddress">Address</label>
+                                <textarea id="companyAddress" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Client Information -->
+                        <div class="form-section">
+                            <h3>Client Information</h3>
+                            <div class="form-group">
+                                <label for="clientName">Client Name *</label>
+                                <input type="text" id="clientName" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="clientEmail">Email</label>
+                                    <input type="email" id="clientEmail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="clientPhone">Phone</label>
+                                    <input type="tel" id="clientPhone">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientAddress">Address</label>
+                                <textarea id="clientAddress" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Invoice Details -->
+                    <div class="form-section">
+                        <h3>Invoice Details</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="invoiceNumber">Invoice Number *</label>
+                                <input type="text" id="invoiceNumber" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="invoiceDate">Invoice Date *</label>
+                                <input type="date" id="invoiceDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dueDate">Due Date</label>
+                                <input type="date" id="dueDate">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Items Section -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <h3>Items</h3>
+                            <button type="button" class="btn btn-outline" onclick="addItem()">
+                                <i class="fas fa-plus"></i>
+                                Add Item
+                            </button>
+                        </div>
+                        <div class="items-container" id="itemsContainer">
+                            <div class="item-row">
+                                <div class="form-group">
+                                    <label>Description *</label>
+                                    <input type="text" class="item-description" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Quantity *</label>
+                                    <input type="number" class="item-quantity" min="1" value="1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Rate *</label>
+                                    <input type="number" class="item-rate" min="0" step="0.01" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Amount</label>
+                                    <input type="text" class="item-amount" readonly>
+                                </div>
+                                <button type="button" class="btn-remove" onclick="removeItem(this)" style="display: none;">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Totals Section -->
+                    <div class="form-section">
+                        <div class="totals-section">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="taxRate">Tax Rate (%)</label>
+                                    <input type="number" id="taxRate" min="0" max="100" step="0.01" value="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="discount">Discount ($)</label>
+                                    <input type="number" id="discount" min="0" step="0.01" value="0">
+                                </div>
+                            </div>
+                            <div class="totals-display">
+                                <div class="total-row">
+                                    <span>Subtotal:</span>
+                                    <span id="subtotal">$0.00</span>
+                                </div>
+                                <div class="total-row">
+                                    <span>Tax:</span>
+                                    <span id="taxAmount">$0.00</span>
+                                </div>
+                                <div class="total-row">
+                                    <span>Discount:</span>
+                                    <span id="discountAmount">$0.00</span>
+                                </div>
+                                <div class="total-row total-final">
+                                    <span>Total:</span>
+                                    <span id="finalTotal">$0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notes Section -->
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="notes">Notes</label>
+                            <textarea id="notes" rows="4" placeholder="Additional notes or payment terms..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" onclick="previewInvoice()">
+                            <i class="fas fa-eye"></i>
+                            Preview
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i>
+                            Save Invoice
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Invoice Preview -->
+            <div class="invoice-preview-container" id="invoicePreviewContainer" style="display: none;">
+                <div class="preview-header">
+                    <h2>Invoice Preview</h2>
+                    <div class="preview-actions">
+                        <button class="btn btn-secondary" onclick="closePreview()">
+                            <i class="fas fa-times"></i>
+                            Close
+                        </button>
+                        <button class="btn btn-outline" onclick="downloadPDF()">
+                            <i class="fas fa-download"></i>
+                            Download PDF
+                        </button>
+                        <button class="btn btn-primary" onclick="saveFromPreview()">
+                            <i class="fas fa-save"></i>
+                            Save Invoice
+                        </button>
+                    </div>
+                </div>
+                <div class="invoice-preview" id="invoicePreview">
+                    <!-- Invoice content will be generated here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <span>Processing...</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
