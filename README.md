@@ -73,7 +73,7 @@ Make sure you have these installed:
 
 | Dashboard | Create Form | PDF Output |
 | :-------: | :---------: | :--------: |
-| ![Dashboard Screenshot](Images/main-page.png) | ![Creation Form Screenshot](images/Invoice-form.png) | ![PDF Output Screenshot](Images/Invoice-output.png) |
+| ![Dashboard Screenshot](Images/main-page.png) | ![Creation Form Screenshot](Images/invoice-form.png) | ![PDF Output Screenshot](Images/invoice-output.png) |
 
 ---
 
