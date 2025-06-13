@@ -74,7 +74,7 @@ Make sure you have these installed:
 
 | Dashboard | Create Form | PDF Output |
 | :-------: | :---------: | :--------: |
-| ![Dashboard Screenshot](https://via.placeholder.com/500x300?text=Your+Dashboard) | ![Creation Form Screenshot](https://via.placeholder.com/500x300?text=Making+an+Invoice) | ![PDF Output Screenshot](https://via.placeholder.com/500x300?text=Finished+Invoice) |
+| ![Dashboard Screenshot](Images/main-page.png) | ![Creation Form Screenshot](https://via.placeholder.com/500x300?text=Making+an+Invoice) | ![PDF Output Screenshot](https://via.placeholder.com/500x300?text=Finished+Invoice) |
 
 ---
 
