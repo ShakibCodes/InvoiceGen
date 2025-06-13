@@ -99,12 +99,10 @@ This project uses the MIT License. See the `LICENSE` file for full details.
 
 Have questions? Reach out!
 
-* **ShakibCodes** - [GitHub Profile](https://github.com/ShakibCodes)
+* **ShakibCodes** - [https://github.com/ShakibCodes](https://github.com/ShakibCodes)
 
-* **My Website:** [Website](https://shakibsayyed.netlify.app/)
+* **My Website:** [https://shakibsayyed.netlify.app/](https://shakibsayyed.netlify.app/)
 
-* **Linkedin** [linked](https://www.linkedin.com/in/shakib-sayyed-81b9b4352/)
-
-Project Link: <https://github.com/ShakibCodes/InvoiceGen>
+* **Linkedin** [https://www.linkedin.com/in/shakib-sayyed-81b9b4352/](https://www.linkedin.com/in/shakib-sayyed-81b9b4352/)
 
 ---
