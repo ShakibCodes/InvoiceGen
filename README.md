@@ -1,10 +1,7 @@
 # InvoiceGen 🚀
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20It%20Now-brightgreen?style=for-the-badge&logo=appveyor)](https://your-live-demo-url.com) <!-- Remember to change this link! -->
-[![GitHub stars](https://img.shields.io/github/stars/ShakibCodes/InvoiceGen?style=for-the-badge&logo=github&color=fcc624)](https://github.com/ShakibCodes/InvoiceGen/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/ShakibCodes/InvoiceGen?style=for-the-badge&logo=github&color=30a3f3)](https://github.com/ShakibCodes/InvoiceGen/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/ShakibCodes/InvoiceGen?style=for-the-badge&logo=github&color=cb30f3)](https://github.com/ShakibCodes/InvoiceGen/issues)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20It%20Now-brightgreen?style=for-the-badge&logo=appveyor)](https://your-live-demo-url.com)
+
 
 ---
 
@@ -48,7 +45,7 @@ Make sure you have these installed:
 
     ```bash
     git clone [https://github.com/ShakibCodes/InvoiceGen.git](https://github.com/ShakibCodes/InvoiceGen.git)
-    cd InvoiceGen
+    cd InvoiceGen 
     ```
 
 2.  **No extra installs needed!** Since it's just HTML, CSS, and JS, you can open it directly.
@@ -75,6 +72,9 @@ Make sure you have these installed:
 | :-------: | :---------: | :--------: |
 | ![Dashboard Screenshot](Images/main-page.png) | ![Creation Form Screenshot](Images/invoice-form.png) | ![PDF Output Screenshot](Images/invoice-output.png) |
 
+| Mobile Phone View |
+| :---------------: |
+| ![Dashboard Screenshot](Images/main-page-phone.png) |
 ---
 
 ## 🛠 What It's Built With
