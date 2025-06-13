@@ -89,28 +89,6 @@ InvoiceGen is made using standard web technologies:
 
 ---
 
-## 🤝 Want to Help?
-
-We'd love your help to make InvoiceGen even better!
-
-If you have an idea or find a bug:
-
-1.  **Fork** this project (make your own copy).
-
-2.  **Create a new branch** for your changes: `git checkout -b feature/your-idea`.
-
-3.  **Save your changes:** `git commit -m 'feat: Added my cool idea'`.
-
-4.  **Send your changes:** `git push origin feature/your-idea`.
-
-5.  **Make a Pull Request** (ask us to add your changes to the main project).
-
-You can also just open an "Issue" to tell us about something.
-
-If you like this project, please give it a **star**! Thanks a bunch!
-
----
-
 ## 📄 License
 
 This project uses the MIT License. See the `LICENSE` file for full details.
