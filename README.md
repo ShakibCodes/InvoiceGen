@@ -1,6 +1,6 @@
 # InvoiceGen 🚀
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20It%20Now-brightgreen?style=for-the-badge&logo=appveyor)](https://your-live-demo-url.com)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20It%20Now-brightgreen?style=for-the-badge&logo=appveyor)](https://shakibcodes.github.io/InvoiceGen/)
 
 
 ---
