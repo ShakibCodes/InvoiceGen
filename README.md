@@ -9,6 +9,8 @@
 
 **InvoiceGen** helps you easily create **professional invoices**. It's perfect for freelancers, small businesses, or anyone who needs to send bills quickly.
 
+[LOGO](Images/InvoiceGen.ICO)
+
 No more manual work! InvoiceGen helps you make, customize, and manage your invoices fast and accurately.
 
 ## ✨ Cool Features
