@@ -17,13 +17,13 @@ No more manual work! InvoiceGen helps you make, customize, and manage your invoi
 
 * **⚡️ Quick Invoices:** Make new invoices in just a few minutes.
 
-* **🎨 Make It Yours:** Customize invoices with your own branding and details. *(If you have this feature)*
+* **🎨 Make It Yours:** Customize invoices with your own branding and details.
 
 * **💰 Auto Math:** It adds up everything for you (totals, taxes, discounts).
 
 * **🧾 List Items:** Easily add or remove items with prices and descriptions.
 
-* **✅ Save Clients:** Keep client details saved for easy use next time. *(If you have this feature)*
+* **✅ Save Clients:** Keep client details saved for easy use next time.
 
 * **💾 Export as PDF:** Save your invoices as nice-looking PDFs.
 
